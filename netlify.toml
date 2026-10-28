@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+
+# Always revalidate so content updates show up immediately.
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

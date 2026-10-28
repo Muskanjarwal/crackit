@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>System Design – CrackIt</title>
+  <meta name="description" content="Building blocks and classic design problems for system design interviews.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%80%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#6c3cf0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+</head>
+<body data-track="sd">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Crack<span>It</span></a>
+      <nav class="nav">
+        <a href="index.html#learn">Tracks</a>
+        <button class="theme-btn" id="theme" aria-label="Toggle theme">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <div class="crumbs"><a href="index.html">Home</a> / Interview resources / System Design</div>
+      <h1>🏗️ System Design</h1>
+      <p>Core building blocks first, then the classic design problems. Focus on trade-offs, not diagrams.</p>
+      <div class="progress">
+        <div class="progress-top"><span>Your progress</span><span id="progress-text">0 / 0 completed</span></div>
+        <div class="bar"><i id="progress-bar"></i></div>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="Search topics and problems…" aria-label="Search">
+      <div class="chips" id="chips">
+        <button class="chip" data-diff="all" aria-pressed="true">All</button>
+        <button class="chip" data-diff="easy" aria-pressed="false">Easy</button>
+        <button class="chip" data-diff="medium" aria-pressed="false">Medium</button>
+        <button class="chip" data-diff="hard" aria-pressed="false">Hard</button>
+      </div>
+    </div>
+
+    <div class="layout">
+      <nav class="toc" id="toc" aria-label="Sections"></nav>
+      <div>
+        <div id="groups"></div>
+        <p class="empty" id="empty">No matches. Try a different search or filter.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><span>© 2026 CrackIt · Built by <a href="https://github.com/MuskanJarwal" target="_blank" rel="noopener noreferrer">@MuskanJarwal</a></span><a href="index.html">← Back to all tracks</a></div>
+  </footer>
+
+  <script src="data-sd.js"></script>
+  <script src="track.js"></script>
+  <script>initThemeButton();</script>
+</body>
+</html>
